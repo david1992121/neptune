@@ -1,0 +1,21 @@
+{
+  "name": "neptune-interview-questions",
+  "version": "0.0.72",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/0xtempest/interview_questions",
+    "type": "git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@solana/buffer-layout": "^4.0.0",
+    "@solana/spl-token": "0.2.0",
+    "@solana/web3.js": "1.41.4",
+    "bn.js": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.0"
+  }
+}
