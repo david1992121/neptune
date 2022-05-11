@@ -21,7 +21,7 @@ import BN from "bn.js";
 import * as borsh from '@project-serum/borsh';
 
 //POPULATE THIS WITH YOUR PROGRAM ID
-let programId = new PublicKey("");
+let programId = new PublicKey("5Zxwzx5Huy3TBqiCHman1UVsAitvrW1dzoJ5YgjPyHFs");
 
 
 const clientScript = async () => {
@@ -196,7 +196,7 @@ const checkAccountData = async(
   if (lockTokenAccountAmount !== expectedTokenAmount) {
     throw new Error("The lock state token account's balance should be zero!")
   }
-  console.log("SUCCESS!!!")
+  console.log('\nSUCCESS!!!\n');
 }
 
 const tryUnlockTransaction = async(
