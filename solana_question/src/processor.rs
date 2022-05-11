@@ -53,8 +53,8 @@ impl Processor {
       return Err(ProgramError::InvalidArgument)
     }
 
-    let is_initialized = lock_state_account.try_borrow_data()?[0] == 1;
-    if is_initialized {
+    //if there's data in the account at all, its already been initialized.
+    if lock_state_account.try_borrow_data()?.len() != 0 {
       msg!("lock state account has already been initialized");
       return Err(ProgramError::InvalidArgument)
     } 
@@ -135,7 +135,8 @@ impl Processor {
     accounts: &[AccountInfo],
     program_id: &Pubkey,
   ) -> ProgramResult {
-    
+    //your code here!
+
     Ok(())
   }
 

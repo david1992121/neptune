@@ -3,8 +3,6 @@ use solana_program::{
   msg,
   program_error::ProgramError
 };
-//this will be a crate that we build ourselves
-//use crate::error::EscrowError::InvalidInstruction;
 
 pub enum LockInstruction{
 
@@ -15,9 +13,7 @@ pub enum LockInstruction{
     amount: u64,
   },
 
-  
   UnlockTokens {
-
   },
   
 }
